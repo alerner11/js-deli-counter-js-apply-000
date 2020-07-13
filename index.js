@@ -30,6 +30,6 @@ function currentLine(katzDeliLine)
   
   for (let i = 0; i < katzDeliLine.length; i++)
   {
-    list.concat`${counter}. ${katzDeliLine[i]}
+    list.concat(`${counter}. ${katzDeliLine[i]} )`;
   }
 }
