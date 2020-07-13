@@ -24,12 +24,12 @@ function currentLine(katzDeliLine)
     return "The line is currently empty."
   }
   
-  var status = "The line is currently: ";
-  
   var list = [];
   
   for (let i = 0; i < katzDeliLine.length; i++)
   {
     list[i] = `${i}. ${katzDeliLine[i]}`;
   }
+  
+  return `The line is currently: 
 }
