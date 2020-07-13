@@ -24,15 +24,14 @@ function currentLine(katzDeliLine)
     return "The line is currently empty."
   }
   
-  var status = "The line is currently"
-  status.concat(`:`);
+  var status = "The line is currently:"
   
   for (let i = 0; i < katzDeliLine.length - 1; i++)
   {
-    status.concat(` ${i}. ${katzDeliLine[i]},`);
+    status = status.concat(` ${i}. ${katzDeliLine[i]},`);
   }
   
-  status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`);
+  status = status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`);
   
   return status;  
 }
