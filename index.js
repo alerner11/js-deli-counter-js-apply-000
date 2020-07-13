@@ -24,15 +24,14 @@ function currentLine(katzDeliLine)
     return "The line is currently empty."
   }
   
-  var list = [];
   var status = "The line is currently: "
   
-  for (let i = 0; i < katzDeliLine.length; i++)
+  for (let i = 0; i < katzDeliLine.length - 1; i++)
   {
-    status.concat()
-    
-    list[i] = `${i}. ${katzDeliLine[i]}`;
+    status.concat(` ${i}. ${katzDeliLine[i]},`)
   }
   
-  return `The line is currently: ${for (let j = 0; j < list.length; j++){console.log(list[j]);}}`;
+  status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`)
+  
+  return status;  
 }
