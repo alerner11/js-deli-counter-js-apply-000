@@ -28,7 +28,7 @@ function currentLine(katzDeliLine)
   
   for (let i = 0; i < katzDeliLine.length - 1; i++)
   {
-    status = status.concat(` ${i+1}. ${katzDeliLine[i]},`);
+    status = status.concat(` ${i + 1}. ${katzDeliLine[i]},`);
   }
   
   status = status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`);
