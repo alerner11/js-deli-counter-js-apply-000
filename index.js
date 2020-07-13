@@ -13,12 +13,16 @@ function nowServing(line)
   
   if (line.length === 0)
   {
+    
     return "There is nobody waiting to be served!";
+  
+    
   }
   
 // need this variable to preserve array item we're about to remove
   var serving = line[0];
-
+  
+// removes first item in array
   line.shift();
 
   return `Currently serving ${serving}.`;
