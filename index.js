@@ -1,4 +1,6 @@
 function takeANumber(line, name)
 {
-  return `Welcome, ${name}. You are number ${line + 1} in line.`
+  var counter = 0;
+  
+  return `Welcome, ${name[counter]}. You are number ${line[counter + 1]} in line.`
 }
