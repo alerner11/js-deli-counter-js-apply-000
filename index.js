@@ -25,6 +25,8 @@ function currentLine(katzDeliLine)
   }
   
   var counter = 1;
+  var status = "The line is "
+  
   
   for (let i = 0; i < katzDeliLine.length; i++)
   {
