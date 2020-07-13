@@ -1,41 +1,21 @@
-function takeANumber(line, name)
-{
-  
-// adds name(s) to line array  
-  line.push(name);
-
+function takeANumber(line, name){
+  line.push(name); // adds name(s) to line array  
   return `Welcome, ${name}. You are number ${line.length} in line.`;
-  
 }
 
-function nowServing(line)
-{
-  
-  if (line.length === 0)
-  {
-    
+function nowServing(line){
+  if (line.length === 0){
     return "There is nobody waiting to be served!";
-  
-    
   }
-  
-// need this variable to preserve array item we're about to remove
-  var serving = line[0];
-  
-// removes first item in array
-  line.shift();
-
+  var serving = line[0]; // need this variable to preserve array item we're about to remove
+  line.shift(); // removes first item in array
   return `Currently serving ${serving}.`;
-  
 }
 
-function currentLine(line)
-{
-  if (line.length === 0)
-  {
+function currentLine(line){
+  if (line.length === 0){
     return "The line is currently empty."
   }
-  
   var status = "The line is currently:"
   
   for (let i = 0; i < line.length - 1; i++)
