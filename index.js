@@ -1,19 +1,26 @@
 function takeANumber(line, name)
 {
+  
+// adds name(s) to line array  
   line.push(name);
-// adds name(s) to array  
+
   return `Welcome, ${name}. You are number ${line.length} in line.`;
+  
 }
 
 function nowServing(line)
 {
+  
   if (line.length === 0)
   {
     return "There is nobody waiting to be served!";
   }
   
+// need this variable to preserve array item we're about to remove
   var serving = line[0];
+
   line.shift();
+
   return `Currently serving ${serving}.`;
   
 }
