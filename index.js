@@ -31,7 +31,7 @@ function currentLine(katzDeliLine)
     status.concat(` ${i}. ${katzDeliLine[i]},`)
   }
   
-  status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`)
+  status.concat(` ${katzDeliLine.length-1}. ${katzDeliLine[katzDeliLine.length-1]}`);
   
   return status;  
 }
