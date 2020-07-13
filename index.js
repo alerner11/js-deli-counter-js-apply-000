@@ -31,5 +31,5 @@ function currentLine(katzDeliLine)
     list[i] = `${i}. ${katzDeliLine[i]}`;
   }
   
-  return `The line is currently: list.values()
+  return `The line is currently: ${list.values()}`;
 }
