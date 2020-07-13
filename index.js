@@ -25,9 +25,12 @@ function currentLine(katzDeliLine)
   }
   
   var list = [];
+  var status = "The line is currently: "
   
   for (let i = 0; i < katzDeliLine.length; i++)
   {
+    status.concat()
+    
     list[i] = `${i}. ${katzDeliLine[i]}`;
   }
   
