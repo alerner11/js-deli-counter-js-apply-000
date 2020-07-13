@@ -25,11 +25,11 @@ function currentLine(katzDeliLine)
   }
   
   var counter = 1;
-  var status = "The line is "
+  var status = "The line is currently: ";
   
   
   for (let i = 0; i < katzDeliLine.length; i++)
   {
-    var list = `${counter}. ${katzDeliLine[i]}
+    list. = `${counter}. ${katzDeliLine[i]}
   }
 }
