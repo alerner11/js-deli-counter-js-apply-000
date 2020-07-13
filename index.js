@@ -25,7 +25,7 @@ function currentLine(katzDeliLine)
   }
   
   var status = "The line is currently"
-  status.conc
+  status.concat(`:`);
   
   for (let i = 0; i < katzDeliLine.length - 1; i++)
   {
