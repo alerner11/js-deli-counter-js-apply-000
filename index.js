@@ -24,5 +24,10 @@ function currentLine(katzDeliLine)
     return "The line is currently empty."
   }
   
-  return `
+  var counter = 1;
+  
+  for (let i = 0; i < katzDeliLine.length; i++)
+  {
+    var list = `${counter}. ${katzDeliLine[i]}
+  }
 }
